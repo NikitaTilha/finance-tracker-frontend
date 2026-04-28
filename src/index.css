@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+.nav-button {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 16px;
+  border: none;
+  background: #1976d2;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+}
+
+button:hover,
+.nav-button:hover {
+  background: #1565c0;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: white;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  min-width: 320px;
+}
+
+.menu {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cfcfcf;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cfcfcf;
+  border-radius: 8px;
+  font-size: 14px;
+  background: white;
+}
+
+.error-text {
+  margin: 0;
+  color: #d32f2f;
+  font-size: 14px;
+  text-align: center;
+}
+
+.category-card {
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: left;
+  background: #fafafa;
+}
+
+.category-card p {
+  margin: 6px 0 0;
+}
+
+.danger-button {
+  width: 100%;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 8px;
+  background: #d32f2f;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.danger-button:hover {
+  background: #b71c1c;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.custom-select {
+  position: relative;
+  width: 100%;
+}
+
+.custom-select-input {
+  width: 100%;
+  height: 42px;
+  box-sizing: border-box;
+  padding: 10px 36px 10px 12px;
+  border: 1px solid #cfcfcf;
+  border-radius: 8px;
+  font-size: 14px;
+  background: white;
+}
+
+.custom-select-arrow {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent !important;
+  color: black;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  box-shadow: none;
+  min-width: auto;
+}
+
+.custom-select-arrow:hover {
+  background: transparent !important;
+}
+
+.custom-select-dropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #cfcfcf;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  z-index: 20;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.custom-select-option {
+  padding: 10px 12px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.custom-select-option:hover {
+  background: #f2f2f2;
+}
+
+.transaction-type {
+  margin: 0 0 10px 0;
+  text-align: center;
+  font-weight: bold;
+  display: block;
+  width: 100%;
+}
+
+.transaction-type.income {
+  color: #2e7d32;
+}
+
+.transaction-type.expense {
+  color: #757575;
+}
+
+.selected-card {
+  border: 2px solid #1976d2;
+  background: #eef5ff;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-card {
+  width: 100%;
+  max-width: 360px;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.modal-card h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.modal-actions {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
