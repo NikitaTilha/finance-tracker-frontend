@@ -114,7 +114,7 @@ function HomePage() {
 
       {!loading && !isAuthenticated && (
         <>
-          <p>Выбери страницу</p>
+
 
           <div className="menu">
             <Link className="nav-button" to="/register">Регистрация</Link>
